@@ -1,0 +1,27 @@
+.footer {
+  background-color: $light-blue;
+  padding-right: 96px;
+  color: $white;
+
+  a {
+    @include not-hover;
+  }
+
+  a:hover,
+  a:focus {
+    @include hover;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@media (max-width: $desktop-width - 1) {
+  .footer {
+    padding-right: 66px;
+  }
+}
+
+@media (max-width: $tablet-width - 1){
+  .footer {
+    padding-right: 0;
+  }
+}

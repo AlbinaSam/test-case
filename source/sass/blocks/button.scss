@@ -1,0 +1,25 @@
+.button {
+  @include font (16, 26);
+  @include not-hover;
+  width: 220px;
+  padding: 17px 30px 20px;
+  background-color: $light-blue;
+  border-radius: 10px;
+  font: inherit;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $white;
+  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+  border: none;
+
+  &:hover,
+  &:focus {
+    @include hover;
+    opacity: 0.7;
+  }
+
+  @media (max-width: $tablet-width - 1) {
+    padding: 12px 30px 15px;
+  }
+}
